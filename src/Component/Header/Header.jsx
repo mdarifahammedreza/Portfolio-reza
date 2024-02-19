@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="navbar bg-black">
+    <div className="navbar font-bold">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -71,10 +71,7 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <a
-          href="../../assets/react.svg"
-          className="btn bg-transparent border-black"
-          download>
+        <a href="../../assets/react.svg" className="btn" download>
           Download CV
         </a>
       </div>
