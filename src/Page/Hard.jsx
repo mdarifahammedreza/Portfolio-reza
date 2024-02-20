@@ -12,7 +12,7 @@ import { TbBrandJavascript } from "react-icons/tb";
 
 const Hard = () => {
   return (
-    <div>
+    <div className="bg-[url('https://i.ibb.co/Jy5vc1t/White-and-Blue-Modern-Aesthetic-Art-Poster-2.png')] bg-cover w-screen">
       <Header />
       <section className="p-20 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className=" bg-transparent p-5 rounded-md shadow-md shadow-cyan-200 hover:bg-gray-800">
@@ -118,7 +118,6 @@ const Hard = () => {
           </div>
         </div>
       </section>
-      
     </div>
   );
 };
