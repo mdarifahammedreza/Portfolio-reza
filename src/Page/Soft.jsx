@@ -10,7 +10,7 @@ const Soft = () => {
             <img
               className=""
               src="https://i.ibb.co/vqd5sJ6/White-and-Blue-Modern-Aesthetic-Art-Poster.png"
-              alt=" competitive programming logo"
+              alt="competitive programming logo"
             />
           </div>
 

@@ -1,12 +1,12 @@
 import Header from "../Component/Header/Header";
+import { SparklesCore } from "../components/ui/sparkles";
 // import Partical from "../Component/partical/TsPartical";
 
 const Projects = () => {
   return (
     <div>
-      
       <Header />
-      <p>Project</p>
+      <SparklesCore />
     </div>
   );
 };
