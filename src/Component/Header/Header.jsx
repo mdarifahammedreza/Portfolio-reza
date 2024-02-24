@@ -43,7 +43,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <Link className="btn btn-ghost text-xl" to="/">
+        <Link
+          className="btn btn-ghost text-xl"
+          to="/
+        ">
           Reza
         </Link>
       </div>
@@ -54,8 +57,11 @@ const Header = () => {
           </li>
           <li>
             <details>
-              <summary>Skills</summary>
+              <summary>Skills & Education</summary>
               <ul className="p-2 md:w-32">
+                <li>
+                  <Link to="/education">Education</Link>
+                </li>
                 <li>
                   <Link to="/soft-skill">Soft-Skill</Link>
                 </li>
@@ -72,7 +78,7 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <Btn text={"Donwload CV"}/>
+        <Btn text={"Donwload CV"} />
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
-import Header from "../Component/Header/Header";
+
 import { FaReact } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa6";
+// import { FaGitAlt } from "react-icons/fa6";
 
 import LinearPrograss from "../Component/Progress/LinearPrograss";
 import { TbBrandJavascript } from "react-icons/tb";
@@ -14,7 +14,7 @@ import { SparklesCore } from "../components/ui/sparkles";
 const Hard = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/Jy5vc1t/White-and-Blue-Modern-Aesthetic-Art-Poster-2.png')] bg-cover w-screen">
-      <Header />
+      
       <SparklesCore/>
       <section className="p-20 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className=" bg-transparent p-5 rounded-md shadow-md shadow-cyan-200 hover:bg-gray-800">

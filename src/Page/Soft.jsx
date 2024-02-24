@@ -1,9 +1,7 @@
-import Header from "../Component/Header/Header";
 
 const Soft = () => {
   return (
     <div>
-      <Header />
       <section className=" m-10 md:m-20">
         <div className="flex before:">
           <div className="w-20 md:w-52 bg- transparent shadow-sm shadow-teal-200 rounded-l-3xl flex items-center justify-center">
