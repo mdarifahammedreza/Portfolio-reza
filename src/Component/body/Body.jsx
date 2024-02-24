@@ -1,3 +1,5 @@
+import { SparklesCore } from "../../components/ui/sparkles";
+
 const Body = () => {
   const paragraph =
     ".As a Software Engineering student at Daffodil International University, I'm passionate about exploring the vast realm of technology. Embracing diverse programming languages and methodologies, I'm eager to create innovative solutions. Continuous learning and problem-solving drive me to make a positive impact on the world through software.";
@@ -20,6 +22,13 @@ const Body = () => {
         </p>
         {/* <!-- Open the modal using ID.showModal() method --> */}
         <div className="divider"></div>
+        <SparklesCore className="h-[20rem]"
+          background="transparent"
+          minSize={0.1}
+          maxSize={2}
+          particleDensity={300}
+          particleColor="#FFFFFF"
+        />
 
         {/* <div  className=" justify-center pt-10"><!-- Open the modal using ID.showModal() method -->
                     <button  className="btn btn-outline btn-info " onclick="my_modal_5.showModal()">Explore more</button>
