@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row bg-purple-700 shadow-purple-300 items-center justify-end [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar rounded-xl mt-4 p-1",
+          "flex flex-row bg-purple-700 shadow-purple-300 items-center justify-end [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar rounded-xl mt-4 p-2",
           containerClassName
         )}>
         {propTabs.map((tab, idx) => (
