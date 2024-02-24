@@ -24,7 +24,7 @@ const Body = () => {
         {/* <!-- Open the modal using ID.showModal() method --> */}
         <div className="divider"></div>
         <SparklesCore
-          className="h-[20rem]"
+          // className="h-[20rem]"
           background="transparent"
           minSize={0.1}
           maxSize={2}

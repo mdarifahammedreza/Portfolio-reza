@@ -3,7 +3,7 @@ import Body from "../Component/body/Body";
 
 const Home = () => {
   return (
-    <div>
+    <div className="h-[calc(100vh-90px)]">
       <Header />
       <Body />
     </div>
