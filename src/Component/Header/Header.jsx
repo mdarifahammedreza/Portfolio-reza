@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Btn } from "../../components/Button/Btn";
 
 const Header = () => {
   return (
@@ -71,9 +72,7 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <a href="../../assets/react.svg" className="btn" download>
-          Download CV
-        </a>
+        <Btn text={"Donwload CV"}/>
       </div>
     </div>
   );

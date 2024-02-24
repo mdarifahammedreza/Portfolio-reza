@@ -11,6 +11,7 @@ const Body = () => {
           <span className="text-teal-400 font-extrabold">Hello</span>
           World!
         </h3>
+
         <div className="divider"></div>
         <p className="  font-sans text-left lg:text-justify justify-center">
           This is <span className="text-teal-400 ">Reza</span>
@@ -22,7 +23,8 @@ const Body = () => {
         </p>
         {/* <!-- Open the modal using ID.showModal() method --> */}
         <div className="divider"></div>
-        <SparklesCore className="h-[20rem]"
+        <SparklesCore
+          className="h-[20rem]"
           background="transparent"
           minSize={0.1}
           maxSize={2}
