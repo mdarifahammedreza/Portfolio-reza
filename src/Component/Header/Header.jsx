@@ -28,8 +28,11 @@ const Header = () => {
               <Link to="/project">Project</Link>
             </li>
             <li>
-              <a>Skills</a>
+              <a>Skills & Education</a>
               <ul className="p-2">
+              <li>
+                  <Link to="/education">Education</Link>
+                </li>
                 <li>
                   <Link to="/soft-skill">Soft-Skill</Link>
                 </li>
