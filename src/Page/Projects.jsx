@@ -1,4 +1,5 @@
 
+import Cart from "../Component/Project cart/Cart";
 import { SparklesPreview } from "../components/SparklesPreview";
 // import { SparklesCore } from "../components/ui/sparkles";
 // import Partical from "../Component/partical/TsPartical";
@@ -6,8 +7,8 @@ import { SparklesPreview } from "../components/SparklesPreview";
 const Projects = () => {
   return (
     <div>
-      
       <SparklesPreview />
+      <Cart/>
     </div>
   );
 };
