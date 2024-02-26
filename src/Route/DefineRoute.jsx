@@ -6,6 +6,7 @@ import Hard from "../Page/Hard";
 import Contact from "../Page/Contact";
 import Root from "../Page/Root";
 import Education from "../Page/Education";
+import Assigment from "../Page/Assigment";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
     ],
+  },
+  {
+    path: "/project/assignment-cover-page-genareotr",
+    element: <Assigment />,
   },
 ]);
 export default router;
