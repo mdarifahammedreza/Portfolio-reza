@@ -1,4 +1,8 @@
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+
 const ReadInfo4Assigment = ({ setstudent }) => {
+  const [startDate, setStartDate] = useState(new Date());
   const url = "http://software.diu.edu.bd:8189/result/studentInfo?studentId=";
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,7 +21,7 @@ const ReadInfo4Assigment = ({ setstudent }) => {
       })
       .then((data) => {
         console.log(data);
-        setstudent({ ...data, ...object });
+        setstudent({ ...data, ...object, Submissiondate: startDate });
       })
       .catch((error) => {
         console.log(error);
@@ -145,6 +149,18 @@ const ReadInfo4Assigment = ({ setstudent }) => {
             </select>
           </label>
         </div>
+        <label className="form-control w-full max-w-xs">
+          <div className="label">
+            <span className="label-text">Input Submission date?</span>
+          </div>
+
+          <DatePicker
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+            className="input input-bordered  w-full max-w-xs placeholder-opacity-5"
+          />
+        </label>
+
         <div className="w-full flex justify-center">
           <button type="submit" className="btn btn-primary mt-5 ">
             Submit

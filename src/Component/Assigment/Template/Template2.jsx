@@ -1,3 +1,4 @@
+import moment from "moment";
 import Table from "react-bootstrap/Table";
 const Template2 = ({ student }) => {
   console.log(student);
@@ -121,7 +122,12 @@ const Template2 = ({ student }) => {
           </div>
           <p>Course Teacher Name: {" " + student?.CourseTeacherName}</p>
           <p>Designation: {" " + student?.courseTeacherDesignation}</p>
-          <p>Submission Date:{" " + student?.studentId}</p>
+          <p>
+            Submission Date:
+            {" " + student?.Submissiondate
+              ? moment(student.Submissiondate).format("LL")
+              : ""}
+          </p>
         </div>
       </div>
       <div className="my-5">

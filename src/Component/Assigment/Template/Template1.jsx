@@ -1,7 +1,14 @@
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
+
+
+
+import "react-datepicker/dist/react-datepicker.css";
+
+
 const Template1 = () => {
+  
   const downloadcover = (id) => {
     const doc = new jsPDF();
     const element = document.getElementById(id);
