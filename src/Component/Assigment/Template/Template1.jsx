@@ -1,19 +1,16 @@
-import React from "react";
 import html2canvas from "html2canvas";
-import { jsPDF } from "jspdf";
+import jsPDF from "jspdf";
+import "jspdf-autotable";
 const Template1 = () => {
-  const hdld = ({ rootElementId = "template1", downloadFileName }) => {
-    console.log(rootElementId);
-
-    const input = document.getElementById(rootElementId);
-    html2canvas(input).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF();
-      pdf.addImage(imgData, "JPEG", 0, 0);
-      pdf.save(`${downloadFileName}.pdf`);
+  const downloadcover = (id) => {
+    const doc = new jsPDF();
+    const element = document.getElementById(id);
+    html2canvas(element).then((canvas) => {
+      doc.addImage(canvas.toDataURL("image/JPEG"), "JPEG", 0, 0);
+      doc.save("Generated.pdf");
     });
-    console.log("woked");
   };
+
   const linearlogo =
     "https://i.ibb.co/LSzfZ8M/daffodil-international-university-logo-2-B5-D310-A17-seeklogo-com.png";
   const mainlogo =
@@ -82,7 +79,7 @@ const Template1 = () => {
           </div>
         </div>
       </div>
-      <button type="button" onClick={() => hdld("template1", "cover")}>
+      <button type="button" onClick={() => downloadcover("template1")}>
         Donwload
       </button>
     </div>
