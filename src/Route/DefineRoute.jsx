@@ -7,6 +7,7 @@ import Contact from "../Page/Contact";
 import Root from "../Page/Root";
 import Education from "../Page/Education";
 import Assigment from "../Page/Assigment";
+import JDSA from "../Page/JDSA";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
   {
     path: "/project/assignment-cover-page-genareotr",
     element: <Assigment />,
+  },
+  {
+    path: "/project/Joypurhat-District-student-Association",
+    element: <JDSA />,
   },
 ]);
 export default router;
