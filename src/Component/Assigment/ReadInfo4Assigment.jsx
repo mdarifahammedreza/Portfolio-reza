@@ -11,7 +11,7 @@ const ReadInfo4Assigment = () => {
         return data.json();
       })
       .then((data) => {
-        console.log(data?.studentName);
+        console.log(data);
       })
       .catch((error) => {
         console.log(error);

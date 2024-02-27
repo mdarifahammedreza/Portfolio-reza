@@ -25,7 +25,7 @@ const Template1 = () => {
         className="m-4 border-2 relative mx-auto h-[842px] w-[595px]">
         <div>
           <div className="flex justify-center items-center border-b-4 border-lightGreen mx-4 py-4">
-            <img className="w-2/6" src={mainlogo} alt="" />
+            {/* <img className="w-2/6" src={mainlogo} alt="" /> */}
             <img className="w-2/6" src={linearlogo} alt="" />
           </div>
           <h1 className="text-center text-4xl uppercase tracking-wider mt-4">
@@ -47,7 +47,11 @@ const Template1 = () => {
                 <li>Discussion--------------------</li>
               </ul>
             </div>
-            <img className="opacity-10 absolute top-80" src="icon.png" alt="" />
+            <img
+              className="opacity-10 absolute top-80 right-32"
+              src={mainlogo}
+              alt="mainlogo"
+            />
             <section className="my-6">
               <h1 className="text-lg font-semibold bg-lightBlue text-white inline px-3 py-1 rounded-md">
                 Submitted By:
