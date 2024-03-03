@@ -7,25 +7,13 @@ import { Tabs } from "../components/ui/tabs";
 const Education = () => {
   const tabs = [
     {
-      title: "Jsc",
-      value: "Jsc",
+      title: "Bsc",
+      value: "Bsc",
       content: (
         <BackgroundGradient>
           <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-            <p>Junior school certificate</p>
-            <JSC />
-          </div>
-        </BackgroundGradient>
-      ),
-    },
-    {
-      title: "Ssc",
-      value: "Ssc",
-      content: (
-        <BackgroundGradient>
-          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-            <p>Secondary school certificate</p>
-            <SSC />
+            <p>Bachelor at Software Engineering</p>
+            <BSC />
           </div>
         </BackgroundGradient>
       ),
@@ -44,13 +32,25 @@ const Education = () => {
       ),
     },
     {
-      title: "Bsc",
-      value: "Bsc",
+      title: "Ssc",
+      value: "Ssc",
       content: (
         <BackgroundGradient>
           <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-            <p>Bachelor at Software Engineering</p>
-            <BSC />
+            <p>Secondary school certificate</p>
+            <SSC />
+          </div>
+        </BackgroundGradient>
+      ),
+    },
+    {
+      title: "Jsc",
+      value: "Jsc",
+      content: (
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Junior school certificate</p>
+            <JSC />
           </div>
         </BackgroundGradient>
       ),

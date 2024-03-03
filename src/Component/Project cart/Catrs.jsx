@@ -44,6 +44,12 @@ const Catrs = () => {
       url: "https://mdarifahammedreza.github.io/g3-architects-resources/",
       status: "complete",
     },
+    {
+      Cardtitle: "Simple add to cart ",
+      CardDescription: `This is a dynamic website for practicing tailwindcss`,
+      url: "https://course-gjzzur8yc-rezas-projects-ed87c688.vercel.app/",
+      status: "complete",
+    },
   ];
 
   return (
