@@ -1,4 +1,3 @@
-
 import { FaReact } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
@@ -9,13 +8,10 @@ import { SiTailwindcss } from "react-icons/si";
 
 import LinearPrograss from "../Component/Progress/LinearPrograss";
 import { TbBrandJavascript } from "react-icons/tb";
-import { SparklesCore } from "../components/ui/sparkles";
 
 const Hard = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/Jy5vc1t/White-and-Blue-Modern-Aesthetic-Art-Poster-2.png')] bg-cover w-screen">
-      
-      <SparklesCore/>
       <section className="p-20 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className=" bg-transparent p-5 rounded-md shadow-md shadow-cyan-200 hover:bg-gray-800">
           <div className="flex items-center gap-1 card-title justify-start">

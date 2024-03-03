@@ -30,14 +30,14 @@ const Header = () => {
             <li>
               <a>Skills & Education</a>
               <ul className="p-2">
-              <li>
+                <li>
                   <Link to="/education">Education</Link>
                 </li>
                 <li>
                   <Link to="/soft-skill">Soft-Skill</Link>
                 </li>
                 <li>
-                  <Link to="/hard-skill">Hard-Skills</Link>
+                  <Link to="/hard-skill">Programing-Skills</Link>
                 </li>
               </ul>
             </li>
@@ -69,7 +69,7 @@ const Header = () => {
                   <Link to="/soft-skill">Soft-Skill</Link>
                 </li>
                 <li>
-                  <Link to="/hard-skill">Hard-Skills</Link>
+                  <Link to="/hard-skill">Programing-Skills</Link>
                 </li>
               </ul>
             </details>

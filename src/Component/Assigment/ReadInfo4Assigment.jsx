@@ -3,9 +3,11 @@ import DatePicker from "react-datepicker";
 
 const ReadInfo4Assigment = ({ setstudent }) => {
   const [startDate, setStartDate] = useState(new Date());
-  const url = "http://software.diu.edu.bd:8189/result/studentInfo?studentId=";
+  const proxyUrl = "/api/proxy.js";
+  // const url = "http://software.diu.edu.bd:8189/result/studentInfo?studentId=";
   const handleSubmit = (e) => {
     e.preventDefault();
+    const studentId = e.target.StudentID.value;
     const object = {
       StudentSection: e.target.StudentSection.value,
       CourseName: e.target.CourseName.value,
@@ -13,18 +15,38 @@ const ReadInfo4Assigment = ({ setstudent }) => {
       CourseTeacherName: e.target.CourseTeacherName.value,
       courseTeacherDesignation: e.target.courseTeacherDesignation.value,
     };
-    console.log(object);
-    const URL = `${url}${e.target.StudentID.value}`;
+    // console.log(object);
+    // const URL = `${url}${e.target.StudentID.value}`;
+    // fetch(URL)
+    //   .then((data) => {
+    //     return data.json();
+    //   })
+    //   .then((data) => {
+    //     console.log(data);
+    //     setstudent({ ...data, ...object, Submissiondate: startDate });
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   });
+    const URL = `${proxyUrl}?studentId=${studentId}`;
+    console.log(URL);
     fetch(URL)
-      .then((data) => {
-        return data.json();
+      .then((response) => {
+        
+        if (!response.ok) {
+          
+          throw new Error("Network response was not ok");
+        }
+        
+        return response.json();
       })
       .then((data) => {
+        
         console.log(data);
         setstudent({ ...data, ...object, Submissiondate: startDate });
       })
       .catch((error) => {
-        console.log(error);
+        console.error("There was a problem with your fetch operation:", error);
       });
   };
   return (

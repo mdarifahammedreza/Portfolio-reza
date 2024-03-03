@@ -2,6 +2,7 @@
 import BSC from "../Component/Education/BSC";
 import HSC from "../Component/Education/HSC";
 import SSC from "../Component/Education/SSC";
+import { BackgroundGradient } from "../components/ui/background-gradient";
 import { Tabs } from "../components/ui/tabs";
 const Education = () => {
   const tabs = [
@@ -9,40 +10,49 @@ const Education = () => {
       title: "Jsc",
       value: "Jsc",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Junior school certificate</p>
-          <JSC />
-        </div>
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Junior school certificate</p>
+            <JSC />
+          </div>
+        </BackgroundGradient>
       ),
     },
     {
       title: "Ssc",
       value: "Ssc",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Secondary school certificate</p>
-          <SSC/>
-        </div>
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Secondary school certificate</p>
+            <SSC />
+          </div>
+        </BackgroundGradient>
       ),
     },
     {
       title: "Hsc",
       value: "Hsc",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Higer scondary school certificate</p>
-          <HSC/>
-        </div>
+        <BackgroundGradient>
+          {" "}
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Higer scondary school certificate</p>
+            <HSC />
+          </div>
+        </BackgroundGradient>
       ),
     },
     {
       title: "Bsc",
       value: "Bsc",
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Bachelor at Software Engineering</p>
-          <BSC/>
-        </div>
+        <BackgroundGradient>
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Bachelor at Software Engineering</p>
+            <BSC />
+          </div>
+        </BackgroundGradient>
       ),
     },
   ];
