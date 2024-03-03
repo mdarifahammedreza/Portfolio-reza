@@ -18,7 +18,7 @@ const Cart = ({ item }) => {
               </span>
             </div>
             <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 items-center">
-              <p className="text-center w-full">Unsuccesful project</p>
+              <p className="text-center w-full">{item?.status}</p>
             </div>
           </div>
         </PinContainer>
