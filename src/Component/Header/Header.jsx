@@ -81,7 +81,9 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <a download href="./../../../public/Resume-MD_Arif_Ahammed_Reza.pdf">
+        <a
+          download
+          href="https://github.com/mdarifahammedreza/Fake-data/blob/main/Resume-MD_Arif_Ahammed_Reza.pdf">
           <Btn text={"Donwload CV"} />
         </a>
       </div>
