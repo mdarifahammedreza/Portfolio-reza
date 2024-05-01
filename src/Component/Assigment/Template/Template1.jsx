@@ -2,19 +2,20 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
-
-
 import "react-datepicker/dist/react-datepicker.css";
 
-
 const Template1 = () => {
-  
-  const downloadcover = (id) => {
-    const doc = new jsPDF();
-    const element = document.getElementById(id);
-    html2canvas(element).then((canvas) => {
-      doc.addImage(canvas.toDataURL("image/JPEG"), "JPEG", 0, 0);
-      doc.save("Generated.pdf");
+  const downloadPDF = () => {
+    const capture = document.querySelector(".template1");
+
+    html2canvas(capture).then((canvas) => {
+      const imgData = canvas.toDataURL("img/png");
+      const doc = new jsPDF("p", "mm", "a4");
+      const componentWidth = doc.internal.pageSize.getWidth();
+      const componentHeight = doc.internal.pageSize.getHeight();
+      doc.addImage(imgData, "PNG", 0, 0, componentWidth, componentHeight);
+
+      doc.save("receipt.pdf");
     });
   };
 
@@ -23,7 +24,7 @@ const Template1 = () => {
   const mainlogo =
     "https://i.ibb.co/8cNLkZw/daffodil-international-university-logo-11-C0-D0-D39-A-seeklogo-com.png";
   return (
-    <div>
+    <div className="template1">
       <div
         id="template1"
         className="m-4 border-2 relative mx-auto h-[842px] w-[595px]">
@@ -86,7 +87,7 @@ const Template1 = () => {
           </div>
         </div>
       </div>
-      <button type="button" onClick={() => downloadcover("template1")}>
+      <button type="button" onClick={downloadPDF}>
         Donwload
       </button>
     </div>

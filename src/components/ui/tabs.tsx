@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row bg-purple-700 shadow-purple-300 items-center justify-end [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar rounded-xl mt-4 p-2",
+          "flex flex-row bg-gray-800  items-center justify-end [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar rounded-xl mt-4 p-2",
           containerClassName
         )}>
         {propTabs.map((tab, idx) => (
@@ -60,13 +60,13 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-xl ",
+                  "absolute inset-0 bg-gray-700 dark:bg-zinc-800 rounded-xl ",
                   activeTabClassName
                 )}
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span className="relative block text-white dark:text-white">
               {tab.title}
             </span>
           </button>

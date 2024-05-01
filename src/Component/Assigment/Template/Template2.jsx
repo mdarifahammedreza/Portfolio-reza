@@ -1,13 +1,16 @@
 import moment from "moment";
-import Table from "react-bootstrap/Table";
+import { useRef } from "react";
+import ReactToPrint from "react-to-print";
+
 const Template2 = ({ student }) => {
+  const cref = useRef();
   console.log(student);
   const linearlogo =
     "https://i.ibb.co/LSzfZ8M/daffodil-international-university-logo-2-B5-D310-A17-seeklogo-com.png";
   const mainlogo =
     "https://i.ibb.co/8cNLkZw/daffodil-international-university-logo-11-C0-D0-D39-A-seeklogo-com.png";
   return (
-    <div className="h-full md:w-full flex flex-col justify-centent">
+    <div ref={cref} className="h-full md:w-full flex flex-col justify-centent">
       <div className="bg-white text-black h-[842px] w-[595px] p-10">
         <div className="w-full  flex items-center justify-center">
           <img src={linearlogo} alt="" />
@@ -130,6 +133,10 @@ const Template2 = ({ student }) => {
           </p>
         </div>
       </div>
+      <ReactToPrint
+        trigger={() => <button className="btn btn-primary mx-10">print</button>}
+        content={() => cref.current}
+      />
       <div className="my-5">
         <button className="btn mx-10 btn-primary">Preview</button>
         <button className="btn btn-primary mx-10">Download</button>
