@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { SparklesCore } from "../../components/ui/sparkles";
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 const Body = () => {
   const paragraph =
@@ -21,6 +23,32 @@ const Body = () => {
           Determined to excel, I embrace challenges and collaborate to develop
           scalable and efficient software solutions.
         </p>
+        <div className="max-w-56 grid grid-cols-4 mt-5 text-2xl">
+          <Link
+            to="https://www.linkedin.com/in/md-arif-ahammed-reza/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className="hover:text-teal-400 hover:shadow-xl hover:shadow-teal-600">
+              <FaLinkedin />
+            </button>
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/md-arif-ahammed-reza/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className="hover:text-teal-400 hover:shadow-xl hover:shadow-teal-600">
+              <FaFacebookSquare />
+            </button>
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/md-arif-ahammed-reza/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className="hover:text-teal-400 hover:shadow-xl hover:shadow-teal-600">
+              <FaGithubSquare />
+            </button>
+          </Link>
+        </div>
         {/* <!-- Open the modal using ID.showModal() method --> */}
         <div className="divider"></div>
         <SparklesCore
