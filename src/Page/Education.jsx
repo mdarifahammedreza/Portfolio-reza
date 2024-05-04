@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import { Helmet } from "react-helmet";
 import BSC from "../Component/Education/BSC";
 import HSC from "../Component/Education/HSC";
 import SSC from "../Component/Education/SSC";
@@ -67,6 +68,14 @@ const Education = () => {
 const JSC = () => {
   return (
     <>
+    <Helmet>
+        <title>Education-Md Arif Ahammed Reza</title>
+        {/* <link rel="canonical" href={pageURL} /> */}
+        <meta
+          name="description"
+          content="Md Arif Ahammed Reza: Expert MERN Stack & Django Developer. Explore my diverse portfolio of innovative web solutions."
+        />
+      </Helmet>
       <div className="bg-transparent  md:mt-10 p-4 rounded-md shadow-md">
         <div className="overflow-x-auto">
           <table className="table table-xs table-pin-rows table-pin-cols gap-2">

@@ -8,10 +8,19 @@ import { SiTailwindcss } from "react-icons/si";
 
 import LinearPrograss from "../Component/Progress/LinearPrograss";
 import { TbBrandJavascript } from "react-icons/tb";
+import { Helmet } from "react-helmet";
 
 const Hard = () => {
   return (
     <div className="bg-[url('https://i.ibb.co/Jy5vc1t/White-and-Blue-Modern-Aesthetic-Art-Poster-2.png')] bg-cover w-screen">
+      <Helmet>
+        <title>Programming Skill-Md Arif Ahammed Reza</title>
+        {/* <link rel="canonical" href={pageURL} /> */}
+        <meta
+          name="description"
+          content="Md Arif Ahammed Reza: Expert MERN Stack & Django Developer. Explore my diverse portfolio of innovative web solutions."
+        />
+      </Helmet>
       <section className="p-20 gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div className=" bg-transparent p-5 rounded-md shadow-md shadow-cyan-200 hover:bg-gray-800">
           <div className="flex items-center gap-1 card-title justify-start">

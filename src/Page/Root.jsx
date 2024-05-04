@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Component/Header/Header";
 import Marquee from "react-fast-marquee";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const Root = () => {
   return (
     <div>
@@ -13,7 +13,7 @@ const Root = () => {
           </p>
         </Marquee>
       </div>
-      <SpeedInsights />
+
       <Header />
       <Outlet />
     </div>
