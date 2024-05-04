@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { SparklesCore } from "../../components/ui/sparkles";
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const Body = () => {
   const paragraph =
@@ -33,7 +38,16 @@ const Body = () => {
             </button>
           </Link>
           <Link
-            to="https://www.linkedin.com/in/md-arif-ahammed-reza/"
+            to="https://github.com/mdarifahammedreza"
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className="hover:text-teal-400 hover:shadow-xl hover:shadow-teal-600">
+              <FaGithubSquare />
+            </button>
+          </Link>
+          
+          <Link
+            to="https://www.facebook.com/reza412200"
             target="_blank"
             rel="noopener noreferrer">
             <button className="hover:text-teal-400 hover:shadow-xl hover:shadow-teal-600">
@@ -41,11 +55,11 @@ const Body = () => {
             </button>
           </Link>
           <Link
-            to="https://www.linkedin.com/in/md-arif-ahammed-reza/"
+            to="https://www.instagram.com/mdarifahammedreza/?hl=en"
             target="_blank"
             rel="noopener noreferrer">
             <button className="hover:text-teal-400 hover:shadow-xl hover:shadow-teal-600">
-              <FaGithubSquare />
+              <FaInstagramSquare />
             </button>
           </Link>
         </div>
