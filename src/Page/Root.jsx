@@ -3,6 +3,7 @@ import Header from "../Component/Header/Header";
 import Marquee from "react-fast-marquee";
 
 const Root = () => {
+  console.log("Root");
   return (
     <div>
       <div className="bg-transparent">
