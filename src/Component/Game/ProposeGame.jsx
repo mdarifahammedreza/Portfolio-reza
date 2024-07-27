@@ -40,10 +40,11 @@ return(
             Yes
           </button></Link>
           <button
-            className=" btn bg-white text-black font-bold "
+            className=" btn bg-white hover:bg-slate-100 text-black font-bold "
             id="noButton"
             onMouseOver={moveButton}
             onClick={moveButton}
+            onTouchCancelCapture={moveButton}
           >
             No
           </button>
