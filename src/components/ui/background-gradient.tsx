@@ -2,7 +2,7 @@ import { cn } from "../../utils/cn";
 import React from "react";
 import { motion } from "framer-motion";
 
-export const BackgroundGradient = ({
+export const   BackgroundGradient = ({
   children,
   className,
   containerClassName,
@@ -30,7 +30,7 @@ export const BackgroundGradient = ({
         transition={
           animate
             ? {
-                duration: 5,
+                duration: 1,
                 repeat: Infinity,
                 repeatType: "reverse",
               }
@@ -58,7 +58,7 @@ export const BackgroundGradient = ({
             : undefined
         }
         style={{
-          backgroundSize: animate ? "400% 400%" : undefined,
+          backgroundSize: animate ? "10%" : undefined,
         }}
         className={cn(
           "absolute inset-0 rounded-2xl z-[1]",

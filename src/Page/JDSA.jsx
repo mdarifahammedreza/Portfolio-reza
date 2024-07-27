@@ -1,13 +1,16 @@
-import Bannerinfo from "../Component/JDSA/From/Bannerinfo";
+import { Outlet } from "react-router-dom";
+import Header from "../Component/JDSA/Header/Header";
 import Frame from "../Component/JDSA/Photo/Frame";
 
+
 const JDSA = () => {
+ 
   return (
     <div>
-      <Frame/>
-      <Bannerinfo/>
+       <Header />
+       <Frame/>
+       <Outlet/>
     </div>
   );
 };
-
 export default JDSA;

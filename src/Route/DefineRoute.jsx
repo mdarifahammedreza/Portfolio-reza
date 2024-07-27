@@ -8,6 +8,15 @@ import Root from "../Page/Root";
 import Education from "../Page/Education";
 import Assigment from "../Page/Assigment";
 import JDSA from "../Page/JDSA";
+import LandingPage from "../Component/JDSA/Landing/LandingPage";
+import Committee from "../Component/JDSA/Committee member/Committee";
+import Alumni from "../Component/JDSA/Alumni/Alumni";
+import FacalityOther from "../Component/JDSA/Facality&other/FacalityOther";
+import Gmember from "../Component/JDSA/Gmember/Gmember";
+import Profile from "../Component/JDSA/Profile/Profile";
+import GameHome from "../Page/GameHome";
+
+
 
 const router = createBrowserRouter([
   {
@@ -45,8 +54,38 @@ const router = createBrowserRouter([
     element: <Assigment />,
   },
   {
+    path: "/project/Game/9block",
+    element: <GameHome/>,
+  },
+  {
     path: "/project/Joypurhat-District-student-Association",
     element: <JDSA />,
+    children: [
+      {
+        path: "/project/Joypurhat-District-student-Association",
+        element: <LandingPage />,
+      },
+      {
+        path: "/project/Joypurhat-District-student-Association/committee-members",
+        element: <Committee/>,
+      },
+      {
+        path: "/project/Joypurhat-District-student-Association/alumni",
+        element: <Alumni/>,
+      },
+      {
+        path: "/project/Joypurhat-District-student-Association/general-member",
+        element: <Gmember/>,
+      },
+      {
+        path: "/project/Joypurhat-District-student-Association/facality&other",
+        element: <FacalityOther />,
+      },
+      {
+        path: "/project/Joypurhat-District-student-Association/profile",
+        element: <Profile />,
+      },
+    ]
   },
 ]);
 export default router;
