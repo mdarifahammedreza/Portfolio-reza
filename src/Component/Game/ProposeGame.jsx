@@ -1,3 +1,4 @@
+import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 const ProposeGame =()=>{
@@ -7,6 +8,7 @@ const ProposeGame =()=>{
       };
     
      const  moveButton = (event) => {
+        toast.error("Hbe na,Yes bolo")
         // Define the function to handle the "No" button mouseover
         const button = event.target;
         button.style.position = 'absolute';
@@ -20,7 +22,7 @@ return(
         <div>
           <h1 className="text-xl font-bold text-white">Hello! Kona jaman(panda)</h1>
           <p className="font-semibold text-white">i want a little bit ador</p>
-          <p className="font-semibold text-white text-xs">Are you give me?</p>
+          <p className="font-semibold text-white text-xs">Do you give me?</p>
           
         </div>
         <div className="gif_container">
@@ -29,7 +31,11 @@ return(
             alt="Cute animated illustration"
           />
         </div>
-        <div className=" flex gap-4">
+        <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
+   <div className=" flex gap-4">
           <Link to="/yes"><button className="btn bg-white hover:text-white text-black font-bold" id="yesButton" onClick={nextPage}>
             Yes
           </button></Link>

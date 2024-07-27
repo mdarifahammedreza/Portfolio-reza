@@ -11,7 +11,7 @@ return(
 </div>
 <div className="gif_container">
   <img
-    src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif"
+    src="https://i.ibb.co/7g2m5Fm/oh-yay.gif"
     alt="Cute animated illustration"
   />
 </div>
