@@ -15,6 +15,8 @@ import FacalityOther from "../Component/JDSA/Facality&other/FacalityOther";
 import Gmember from "../Component/JDSA/Gmember/Gmember";
 import Profile from "../Component/JDSA/Profile/Profile";
 import GameHome from "../Page/GameHome";
+import ProposeGame from "../Component/Game/ProposeGame";
+import Yes from "../Component/Game/Yes";
 
 
 
@@ -54,9 +56,25 @@ const router = createBrowserRouter([
     element: <Assigment />,
   },
   {
-    path: "/project/Game/9block",
-    element: <GameHome/>,
+    path: "/yes",
+    element: <Yes/>,
   },
+  
+  {
+    path: "/project/Game",
+    element: <ProposeGame/>,
+    children:[
+      {
+        path: "/project/Game/9block",
+        element: <GameHome/>,
+      },
+      {
+        path: "/project/Game/propose",
+        element: <ProposeGame/>,
+      }
+    ]
+  },
+  
   {
     path: "/project/Joypurhat-District-student-Association",
     element: <JDSA />,

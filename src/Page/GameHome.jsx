@@ -1,31 +1,33 @@
-const GameHome =()=>{
-    const effect = `p-5 border bg-white text-black font-extrabold text-4xl shadow-md`
-const swap =(value)=>{
-    
-    console.log(value,array[0])
+import { Outlet } from "react-router-dom";
 
-}
-let array = ['0','1','2','x','3','4','5','6','7','8','9','']
-let value = {
-        value0:'0',
-        value1:'1',
-        value2:'2',
-        value3:'3',
-        value4:'4',
-        value5:'5',
-        value6:'6',
-        value7:'7',
-        value8:'8',
-        value9:'9',
-        valuex:'x',
-        value00:''
-    }
+const GameHome =()=>{
+//     const effect = `p-5 border bg-white text-black font-extrabold text-4xl shadow-md`
+// const swap =(value)=>{
+    
+//     console.log(value,array[0])
+
+// }
+// let array = ['0','1','2','x','3','4','5','6','7','8','9','']
+// let value = {
+//         value0:'0',
+//         value1:'1',
+//         value2:'2',
+//         value3:'3',
+//         value4:'4',
+//         value5:'5',
+//         value6:'6',
+//         value7:'7',
+//         value8:'8',
+//         value9:'9',
+//         valuex:'x',
+//         value00:''
+//     }
 
 
 return (
 
     <>
-    <div className=" flex pt-10 px-10 gap-5 justify-end">
+    {/* <div className=" flex pt-10 px-10 gap-5 justify-end">
 
     <button className="btn btn-primary px-6 py-2 ">Restart</button>
     <button className="btn btn-primary px-6 py-2 ">Close</button>
@@ -49,7 +51,10 @@ return (
             <button className={effect} onClick={ ()=>swap(value.value00)}>{value.value00}</button>
             
         </div>
-</div>
+</div> */}
+
+        <Outlet></Outlet>
+
     </>
 );
 
